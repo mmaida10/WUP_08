@@ -81,3 +81,5 @@ plot(LENGTH~HEADWTH,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+
+After testing out all of the other five different variables that could be used in this study, the variable HEADLEN seemed to have the lowest residual standard error of 4.235 while having the highest adjusted R^2 of 0.8434. This helps to prove that HEADLEN is the greatest determiner of bear length in this study. 
