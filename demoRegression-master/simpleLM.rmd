@@ -65,3 +65,11 @@ plot(LENGTH~AGE,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+
+## Model LENGTH ~ HEADLEN  this is an example  
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
