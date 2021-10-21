@@ -58,8 +58,10 @@ summary.lm(simp)
 
 While the residual standard error of the neck data was 5.376, the residual standard error of the newly calculated chest data was 4.939. Additionally, the adjusted R^2 of the neck data was 0.7476 while the newly calculated adjusted R^2 of the chest data was 0.7869. Since the residual standard error of the chest data was a smaller value while the adjusted R^2 value of the chest was larger, we know that the chest is a more accurate determiner of bear length. 
 
-
-
-
- 
-
+## Model LENGTH ~ AGE  this is an example  
+```{r}
+simp <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(simp)
+summary.lm(simp)
+```
