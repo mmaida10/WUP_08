@@ -36,3 +36,30 @@ predict(simp,new,se.fit=TRUE)
 ```
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
 
+## Model LENGTH ~ WEIGHT  this is an example  
+```{r}
+simp <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The residual R^2 for the neck was 5.376, and the residual R^2 for the statistic using weight was 5.432. Additionally, the adjusted R^2 for the neck was 0.7476 while the adjusted R^2 for the weight was 0.7423. Based on those two factors, the neck proved to be a better model than the weight. We will have to try again.
+
+
+## Model LENGTH ~ CHEST  this is an example  
+
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+While the residual standard error of the neck data was 5.376, the residual standard error of the newly calculated chest data was 4.939. Additionally, the adjusted R^2 of the neck data was 0.7476 while the newly calculated adjusted R^2 of the chest data was 0.7869. Since the residual standard error of the chest data was a smaller value while the adjusted R^2 value of the chest was larger, we know that the chest is a more accurate determiner of bear length. 
+
+
+
+
+ 
+
